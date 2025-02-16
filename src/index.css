@@ -49,6 +49,21 @@
   text-fill-color: transparent;
 }
 
+.small-text-gradient-gold {
+  background: radial-gradient(
+    50.18% 50.18% at 50.16% 35.69%,
+    #def9fa 1%,
+    #f0e6b9 60%,
+    #e6c99c 80%,
+    #e6c890 90%,
+    #e5be6c 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,

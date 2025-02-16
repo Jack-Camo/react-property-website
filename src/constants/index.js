@@ -57,3 +57,10 @@ export const property_slides = [
     image: barrow_living_room,
   }
 ];
+
+export const contactInfo =
+{
+  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse laudantium officiis fugiat natus molestias facere dolorum nihil ex.",
+  email: "test@property.com",
+  number: "0123456789",
+};

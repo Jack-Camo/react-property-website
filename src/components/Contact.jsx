@@ -1,7 +1,8 @@
 import { useState, useRef } from "react"
 import emailjs from '@emailjs/browser'
-
-import styles from "../style"
+import styles, { layout } from "../style"
+import { email, phone } from "../assets"
+import { contactInfo } from "../constants"
 
 const Contact = () => {
   const formRef = useRef();
@@ -37,7 +38,7 @@ const Contact = () => {
     )
     .then(() => {
       setLoading(false);
-      alert('Thank you. I will get back to you as soon as possible.');
+      alert('Thank you. We will get back to you as soon as possible.');
 
       setForm({
         name: '',
@@ -54,17 +55,32 @@ const Contact = () => {
   }
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
-      <div className="flex-[0.75] bg-tertiary p-8 rounded-2xl">
-        <p className={styles.paragraph}>Get in touch</p>
-        <h2 className={styles.heading2}>Contact.</h2>
+    <section id="contact" className={layout.section}>
 
+      <div className="flex flex-1 flex-col md:mb-0 mb-4">
+        <p className={`${styles.paragraph} small-text-gradient-gold`}>Get in touch</p>
+        <h2 className={`${styles.heading2} `}>Contact.</h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          {contactInfo.description}
+        </p>
+        <div className="mt-16 flex items-center space-x-2">
+          <img src={email} alt="icon" className={`text-white w-[22px] h-[22px]`}/>
+          <p className={`${styles.paragraph} text-white text-[22px]`}>{contactInfo.email}</p>
+        </div>
+
+        <div className="mt-4 flex items-center space-x-2">
+          <img src={phone} alt="icon" className={`text-white w-[22px] h-[22px]`}/>
+          <p className={`${styles.paragraph} text-white text-[22px]`}>{contactInfo.number}</p>
+        </div>
+      </div>
+
+      <div className={`flex-1 flex bg-tertiary p-8 rounded-2xl`}>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-4 flex-1 flex-col gap-8"
         >
-          <label className="flex flex-col">
+          <label className="flex flex-col mb-3">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input 
               type="text"
@@ -76,7 +92,7 @@ const Contact = () => {
             />
           </label>
 
-          <label className="flex flex-col">
+          <label className="flex flex-col mb-3">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input 
               type="email"
@@ -88,7 +104,7 @@ const Contact = () => {
             />
           </label>
 
-          <label className="flex flex-col">
+          <label className="flex flex-col mb-3">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea 
             rows="7"
@@ -102,13 +118,13 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-primary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 
