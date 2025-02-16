@@ -1,9 +1,17 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Button from "./Button";
+import Property from "./Property";
+import CardSlideshow from "./CardSlideshow";
+import FeatureCard from "./FeatureCard";
+import Contact from "./Contact";
 
 export {
     Navbar,
     Hero,
-    Button
+    Button,
+    Property,
+    CardSlideshow,
+    FeatureCard,
+    Contact
 };
