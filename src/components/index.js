@@ -4,6 +4,7 @@ import Button from "./Button";
 import Property from "./Property";
 import CardSlideshow from "./CardSlideshow";
 import FeatureCard from "./FeatureCard";
+import Contact from "./Contact";
 
 export {
     Navbar,
@@ -12,4 +13,5 @@ export {
     Property,
     CardSlideshow,
     FeatureCard,
+    Contact
 };
