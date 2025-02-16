@@ -24,15 +24,20 @@ const Hero = () => {
           <p className={`${styles.paragraph} max-w-[520px] mt-8`}>Providing affordable room rental in the Barrow-in-Furness area. Perfect for professionals working at BAE Systems, Furness General Hospital or other local contracting agencies.</p>
 
           <div className="flex flex-row mt-10">
-            <Button 
-              text={"View Properties"}
-              styles={`bg-gold-gradient`}
-            />
-            <Button 
-              text={"Contact Us"}
-              styles={`ml-10 bg-gold-grad-button`}
-              textColor="text-white"
-            />
+            <a href="#properties">
+              <Button 
+                text={"View Properties"}
+                styles={`bg-gold-gradient`}
+              />
+            </a>
+
+            <a href="#contact">
+              <Button 
+                text={"Contact Us"}
+                styles={`ml-10 bg-gold-grad-button flex h-full`} // w-full 
+                textColor="text-white"
+              />
+            </a>
           </div>
         </div>
       </div>
