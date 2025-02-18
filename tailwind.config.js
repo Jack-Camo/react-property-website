@@ -7,8 +7,10 @@ export default {
         primary: "#0c1b32",
         secondary: "#e5be6c",
         tertiary: "#102242",
+        quaternary: "#041738",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
