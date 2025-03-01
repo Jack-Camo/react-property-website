@@ -45,7 +45,7 @@ const About = () => {
           top: '-50%',
           width: '100%',
         }}
-        data-rellax-speed='2'
+        data-rellax-speed='3'
       ></div>      
       <div 
         className={`${styles.paddingX} ${styles.flexStart}`}
