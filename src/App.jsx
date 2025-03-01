@@ -1,6 +1,5 @@
-import React from 'react'
 import styles from './style';
-import { Navbar, Hero, Property, Contact } from './components';
+import { Navbar, Hero, Property, Contact, About } from './components';
 
 const App = () => (
   <div>
@@ -21,6 +20,13 @@ const App = () => (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Property />
+      </div>
+    </div>
+
+    <About />
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
         <Contact />
       </div>
     </div>
