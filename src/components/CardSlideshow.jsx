@@ -56,13 +56,16 @@ const CardSlideshow = () => {
           )})}
         </Slide> */}
 
-        <Slide>
+        {/* <Slide>
           <div>
             <div style={{backgroundImage: `url(${slideImages[0].url})`}} className='flex flex-1'>
 
             </div>
           </div>
-        </Slide>
+        </Slide> */}
+
+        <img src={property_slides[1].image} alt='Bedroom' className='w-full h-auto object-cover max-h-[500px] ml-4' /> {/* max-w-[500px] max-h-[500px] */}
+        
       </div>
     </div>
 
