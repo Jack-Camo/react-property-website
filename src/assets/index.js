@@ -13,6 +13,9 @@ import barrow_living_room from './property/barrow-living-room.jpg';
 import email from './email.svg';
 import phone from './phone.svg';
 import bae from './bae-systems.png';
+import centrica from './centria-dark.png';
+import nhs from './nhs-letters.png';
+import orsted from './orsted.png';
 
 export {
     logo_gold,
@@ -29,5 +32,8 @@ export {
     barrow_living_room,
     email,
     phone,
-    bae
+    bae,
+    centrica,
+    nhs,
+    orsted,
 };

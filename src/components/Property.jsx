@@ -6,6 +6,7 @@ const Property = () => (
   <section id='properties'>
     <div className={layout.section}>
       <div className={layout.sectionInfo}>
+        <p className={`${styles.paragraph} small-text-gradient-gold`}>Discover</p>
         <h2 className={styles.heading2}>Explore Our <br className='sm:block hidden' /> Properties</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse laudantium officiis fugiat natus molestias facere dolorum nihil ex, perspiciatis non atque ipsa nesciunt dolores dignissimos et quia necessitatibus error alias.

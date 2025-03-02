@@ -1,4 +1,4 @@
-import { toilet, kitchen, sofa, dalton_bathroom_1, dalton_kitchen, barrow_living_room, bae } from "../assets";
+import { toilet, kitchen, sofa, dalton_bathroom_1, dalton_kitchen, barrow_living_room, bae, centrica, nhs, orsted } from "../assets";
 
 export const navLinks = [
     {
@@ -70,5 +70,20 @@ export const companies = [
     id: "company-1",
     alt: "BAE Systems",
     logo: bae,
-  }
+  },
+  {
+    id: "company-2",
+    alt: "Centrica",
+    logo: centrica,
+  },
+  {
+    id: "company-3",
+    alt: "NHS",
+    logo: nhs,
+  },
+  {
+    id: "company-4",
+    alt: "Orsted",
+    logo: orsted,
+  },
 ]
