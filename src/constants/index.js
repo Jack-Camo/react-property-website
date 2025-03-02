@@ -1,4 +1,4 @@
-import { toilet, kitchen, sofa, dalton_bathroom_1, dalton_kitchen, barrow_living_room } from "../assets";
+import { toilet, kitchen, sofa, dalton_bathroom_1, dalton_kitchen, barrow_living_room, bae } from "../assets";
 
 export const navLinks = [
     {
@@ -64,3 +64,11 @@ export const contactInfo =
   email: "test@property.com",
   number: "0123456789",
 };
+
+export const companies = [
+  {
+    id: "company-1",
+    alt: "BAE Systems",
+    logo: bae,
+  }
+]

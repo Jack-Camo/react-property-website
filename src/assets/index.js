@@ -12,6 +12,7 @@ import dalton_bathroom_1 from './property/dalton-bathroom-1.jpg';
 import barrow_living_room from './property/barrow-living-room.jpg';
 import email from './email.svg';
 import phone from './phone.svg';
+import bae from './bae-systems.png';
 
 export {
     logo_gold,
@@ -27,5 +28,6 @@ export {
     dalton_bathroom_1,
     barrow_living_room,
     email,
-    phone
+    phone,
+    bae
 };
