@@ -7,6 +7,7 @@ import FeatureCard from "./FeatureCard";
 import Contact from "./Contact";
 import About from "./About";
 import Companies from "./Companies";
+import Footer from "./Footer";
 
 export {
     Navbar,
@@ -17,5 +18,6 @@ export {
     FeatureCard,
     Contact,
     About,
-    Companies
+    Companies,
+    Footer,
 };

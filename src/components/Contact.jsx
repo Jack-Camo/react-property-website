@@ -1,7 +1,7 @@
 import { useState, useRef } from "react"
 import emailjs from '@emailjs/browser'
 import styles, { layout } from "../style"
-import { email, phone } from "../assets"
+import { email, phone, logo_gold } from "../assets"
 import { contactInfo } from "../constants"
 
 const Contact = () => {
@@ -71,6 +71,16 @@ const Contact = () => {
         <div className="mt-4 flex items-center space-x-2">
           <img src={phone} alt="icon" className={`text-white w-[22px] h-[22px]`}/>
           <p className={`${styles.paragraph} text-white text-[22px]`}>{contactInfo.number}</p>
+        </div>
+
+        <div className={`${styles.flexStart} hidden md:flex md:flex-row flex-col w-full mt-auto`}>
+          <div className="flex-1 flex flex-col justify-start mr-10">
+            <img 
+              src={logo_gold}
+              alt="hoobank"
+              className="w-[200px] object-contain"
+            />
+          </div>
         </div>
       </div>
 
