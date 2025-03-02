@@ -6,6 +6,7 @@ import CardSlideshow from "./CardSlideshow";
 import FeatureCard from "./FeatureCard";
 import Contact from "./Contact";
 import About from "./About";
+import Companies from "./Companies";
 
 export {
     Navbar,
@@ -16,4 +17,5 @@ export {
     FeatureCard,
     Contact,
     About,
+    Companies
 };
